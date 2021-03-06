@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Assignment</title>
+</head>
+<body>
+<div class="blob-small"></div>
+<div class="circle"></div>
+  <div id="navbar" class="navbarClass" (scroll)="onWindowScroll($event);">
+    <a href="#" id="logo"></a>
+    <div id="navbar-right">
+      <a href="#Products" id="productsId">Products</a>
+      <a href="#Solutions" id="solutionsId">Solutions</a>
+      <a href="#Pricing" id="pricingId">Pricing</a>
+      <button class="loginBtn">Login</button>
+      <button class="getstartedbtn">Get Started</button>
+    </div>
+  </div>
+<div class="Quote"></div>
+<div class="hLine"></div>
+<div class="imgLeft"></div>
+<div class="accDots1">
+   <img src="../assets/images/accounting_dots.svg">
+</div>
+<!-- Eligiblility Calculator -->
+<div class="MainBox">
+  <div id="cardOneMain">
+  <div class="cardOne">
+    <div class="mainheader" id="mainheaderId">Eligibility Calculator</div>
+    <p id="header1">Monthly Income</p>
+    <div id="monthIncomeId"><b>₹&nbsp;{{monthlyIncome.value}}</b></div>
+    <mat-slider
+    #monthlyIncome
+    (change)="updateMonthlyIncome($event)"
+    [value]="monthlyIncome"
+    min="0"
+    max="300000"
+    step="1"
+    value="0">
+  </mat-slider>
+    <div class="limitRange">
+      <span class="sliderMin">₹&nbsp;1,00,000</span>
+      <span class="sliderMax">₹&nbsp;3,00,000</span>
+    </div>
+    <br>
+    <p id="header1">Monthly Expense</p>
+    <div id="monthlyExpenseId"><b>₹&nbsp;{{monthlyExpense.value}}</b></div>
+    <mat-slider
+    #monthlyExpense
+    (change)="updateMonthlyExpense($event)"
+    [value]="monthlyExpense"
+    min="0"
+    max="100000"
+    step="1"
+    value="0">
+  </mat-slider>
+  <!-- <p id="RepayTenure">Repayment Tenure</p> -->
+  <mat-form-field appearance="fill">
+    <mat-label>Repayment Tenure</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let tenure of tenures" [value]="tenure.value">
+        {{tenure.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div>
+    <span class="toggleClass">Do you have any existing loans&nbsp;&nbsp;</span>
+    <mat-slide-toggle></mat-slide-toggle>
+  </div>
+  <br>
+  <div>
+    <p id="EmiTag">EMI of existing loan (optional)</p>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <!-- <mat-label>EMI of existing loan (optional)</mat-label> -->
+        <input matInput placeholder="Ex. ₹&nbsp;15000">
+      </mat-form-field>
+    </form>
+</div>
+  </div>
+</div>
+  <div class="cardTwo">
+    <p id="p1" style="text-align: center; opacity: 0.7;">Load Amount</p>
+    <p style="text-align: center; padding-bottom: 10px;">₹&nbsp;1,00,000</p>
+    <p style="text-align: center; opacity: 0.7;">Your EMI will be</p>
+    <p style="text-align: center;padding-bottom: 10px;">₹&nbsp;15,000</p>
+    <div class="getmoneyBtn" style="text-align: center; cursor: pointer;">GET MONEY</div>
+
+  </div>
+</div>
+<div class="accDots2">
+  <img src="../assets/images/accounting_dots.svg">
+</div>
+
+<div class="sol_wave_bg">
+  <div class="row">
+    <div class="col-3">
+      <div class="card1">
+        <div class="Icon1"></div>
+        <div class="cardheader">Quick cash disbursement</div>
+        <div class="cardbody">Get terms loans that your business needs <br> within 72 hrs</div>
+      </div>
+      <div class="card1">
+        <div class="Icon2"></div>
+        <div class="cardheader">Low-interest rate</div>
+        <div class="cardbody">Achieve your financial goals with an <br>
+          interest rate starting at 13% per annum <br>
+          amazing</div>
+
+      </div>
+      <div class="card1">
+        <div class="Icon3"></div>
+        <div class="cardheader">Zero Paperwork</div>
+        <div class="cardbody">Get started instantly by submitting only <br>
+        your basic details & bank statements</div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card2Upper">
+        <div class="Icon4"></div>
+        <div class="cardheader">Ace your business Finances</div>
+        <div class="cardbody">Manage banking accounting & everything <br>
+        in between, on one platform</div>
+      </div>
+      <div class="card2Lower">
+        <div class="Icon5"></div>
+        <div class="cardheader">Loans to fight COVID-19</div>
+        <div class="cardbody">Zero EMI for first 3 months on Back-to- <br>
+        Business loans of upto 1 lakh</div>
+      </div>
+    </div>
+    <div class="col-4">
+      <!-- right side -->
+      <div class="boostYourBusines"></div>
+      <div class="line3"></div>
+      <div class="getYourHand"></div>
+      <div class="OpenAcButton">Get an Open Account</div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
+
+<router-outlet></router-outlet>

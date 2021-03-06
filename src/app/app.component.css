@@ -1,0 +1,556 @@
+* {box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html { height:100%; }
+
+body {
+  overflow-x:hidden;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  margin: 0;
+  font-size: 'Open Sans';
+  opacity: 1;
+}
+
+
+
+
+#logo{
+margin-top: -40px;
+margin-left: 70px;
+width: 123px;
+height: 123px;
+background: transparent url('../assets/images/logo/logo.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+/* nav products name */
+#productsId {
+width: 103px;
+height: 34px;
+text-align: left;
+font: normal normal normal 25px/34px Open Sans;
+/* font: open Sans; */
+letter-spacing: 0px;
+color: #222222;
+opacity: 1;
+}
+#solutionsId{
+width: 108px;
+height: 34px;
+text-align: left;
+font: normal normal normal 25px/34px Open Sans;
+letter-spacing: 0px;
+color: #222222;
+opacity: 1;
+}
+#pricingId{
+width: 79px;
+height: 34px;
+text-align: left;
+font: normal normal normal 25px/34px Open Sans;
+letter-spacing: 0px;
+color: #222222;
+opacity: 1;
+padding: 20px 20px;
+}
+.loginBtn{
+margin-top: 5px;
+/* margin-right: 20px; */
+width: 105px;
+height: 40px;
+color: #663399;
+box-shadow: 0px 0px 20px #00000033;
+border: 2px solid #663399;
+border-radius: 24px;
+opacity: 1;
+margin-left: 10px;
+margin-right: 10px;
+}
+.loginBtn:hover {
+background-color:#663399;
+color: #fff;
+}
+.getstartedbtn{
+color: #fff;
+width: 150px;
+height: 40px;
+background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 20px #00000033;
+border-radius: 24px;
+opacity: 1;
+border: 1px solid #663399;
+}
+.getstartedbtn:hover{
+  background: #481877;
+}
+#navbar {
+  /* background-color: rgba(255, 255, 255, 0.247); */
+  transition: background-color 1s ease 0s;
+  overflow: hidden;
+  /* background-color: rgba(255, 255, 255, 0.322); */
+  /* padding-right: 10px; */
+  padding-top: 40px;
+  margin-left: -30px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  /* color: black; */
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+
+
+#navbar a:hover {
+
+  color: #663399;
+}
+
+
+#navbar-right {
+  float: right;
+}
+
+.navbar-inverse{
+  background-color: white;
+}
+.blob-small{
+  /* position: absolute; */
+  margin-left: -180px;
+  margin-top: 150px;
+  width: 571px;
+  height: 572px;
+  background: transparent url('../assets/images/blob-small.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+}
+.circle {
+  margin-top: -1000px;
+  margin-left: 46vw;
+  width: 1183px;
+  height: 1192px;
+
+transform: matrix(0.12, -0.99, 0.99, 0.12, 0, 0);
+background: transparent url('../assets/images/circle.png') 0% 0% no-repeat padding-box;
+opacity: 0.5;
+}
+
+.Quote{
+margin-top: -700px;
+margin-left: 100px;
+width: 407px;
+height: 98px;
+background: transparent url('../assets/images/WemakeitSuperSim.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.hLine{
+  margin-left: 100px;
+  top: 376px;
+  left: 192px;
+  width: 236px;
+  height: 8px;
+  background: #000000 0% 0% no-repeat padding-box;
+  border-radius: 13px;
+  opacity: 0.7;
+}
+.imgLeft{
+margin-left: 30px;
+margin-top: 80px;
+width: 652px;
+height: 365px;
+background: transparent url('../assets/images/collect_img-video.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.accDots1{
+margin-top: -30px;
+margin-left: 350px;
+top: 796px;
+left: 462px;
+width: 430px;
+height: 70px;
+opacity: 0.5;
+}
+.MainBox{
+  display: flex;
+}
+.cardOne{
+width: 350px;
+height: 540px;
+background-color: #fff;
+box-shadow: 0px 0px 20px #00000033;
+border-radius: 15px;
+margin-right: 10px;
+
+}
+.cardTwo{
+  padding-top: 80px;
+  width: 140px;
+  height: 320px;
+  /* background-color: #663399; */
+  background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 120px;
+  color: #fff;
+  font-family: 'open sans';
+
+}
+.mainheader{
+  font-family: 'open sans';
+  font-size: large;
+  /* text-align: center; */
+  /* padding-left: 55px; */
+  padding-top: 10px;
+  margin-bottom: 25px;
+
+}
+#mainheaderId{
+  background-color:rgba(173, 216, 230, 0.247);
+  width: 350px;
+  height: 50px;
+  margin-left: -35px;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.getmoneyBtn{
+  font-size: small;
+  color: #663399;
+  background-color: #fff;
+  /* padding-left: 15px; */
+  padding-top: 5px;
+  margin-left: 8px;
+  width: 100px;
+  height: 30px;
+  box-shadow: 0px 0px 20px #00000033;
+  border-radius: 24px;
+  opacity: 1;
+  font-family: 'open sans';
+  margin-left: 20px;
+  /* font-family: open sans; */
+  }
+
+  .getmoneyBtn:hover{
+    color: #fff;
+  background-color: #663399;
+  cursor: pointer;
+  }
+
+#header1{
+  color: #000000;
+  font-family: 'open sans';
+  font-size: medium;
+  /* font-weight: 600; */
+
+}
+mat-slider {
+  width: 280px;
+
+
+}
+
+.sliderMin{
+  color: #00000069;
+  /* float: left; */
+}
+
+.sliderMax{
+  color: #00000069;
+  /* float: right; */
+  padding-left: 130px;
+}
+.limitRange{
+  line-height: 0;
+}
+#monthIncomeId{
+  font-family: 'open sans';
+
+}
+
+#monthlyExpenseId{
+  font-family: 'open sans';
+
+}
+
+mat-form-field {
+  width: 280px;
+}
+mat-select{
+  width: 280px;
+}
+mat-label{
+  width: 280px;
+  color: #000000;
+  /* font-weight: 500; */
+
+}
+
+.toggleClass{
+  color: #000000;
+  font-family: 'Open Sans';
+  font-size: medium;
+  font-weight:500;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 80%;
+}
+Input{
+  font-size: 20px;
+}
+#EmiTag{
+  color: #000000;
+  margin-bottom: -7px;
+  font-family: 'Open Sans';
+  font-weight: 500;
+}
+
+.cardOne{
+  padding-left: 35px;
+}
+
+.MainBox{
+margin-left: 840px;
+margin-top: -500px;
+z-index: 1;
+position: absolute;
+}
+.accDots2{
+margin-left: 1000px;
+}
+
+.sol_wave_bg{
+margin-top: 200px;
+/* width: 1920px; */
+height: 936px;
+background: transparent url('../assets/images/sol_wave_bg.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.card1{
+  margin-top: -100px;
+  margin-bottom: 125px;
+  background-color: #FFFFFF;
+  width: 390px;
+  height: 272px;
+  margin-left:30px;
+  box-shadow: 0px 0px 30px #2321321F;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  border-radius: 20px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+.card2Upper{
+  margin-top: 45px;
+  margin-left: 110px;
+  background-color: #FFFFFF;
+  width: 390px;
+  height: 272px;
+  /* margin-left:150px; */
+  box-shadow: 0px 0px 30px #2321321F;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  border-radius: 20px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card2Lower{
+  margin-top: 25px;
+  margin-left: 110px;
+  background-color: #FFFFFF;
+  width: 390px;
+  height: 272px;
+  /* margin-left:150px; */
+  box-shadow: 0px 0px 30px #2321321F;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.164);
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.boostYourBusines{
+margin-top: 200px;
+margin-left: 250px;
+width: 410px;
+height: 98px;
+background: transparent url('../assets/images/Boost your business.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.line3{
+margin-top: 30px;
+margin-left: 250px;
+width: 120px;
+height: 1px;
+background: transparent url('../assets/images/Line 3.svg') 0% 0% no-repeat padding-box;
+border: 6px solid #707070;
+opacity: 1;
+}
+.getYourHand{
+margin-top: 30px;
+margin-left: 250px;
+width: 490px;
+height: 44px;
+background: transparent url('../assets/images/Get your hands on a.svg') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.OpenAcButton{
+margin-left: 250px;
+margin-top: 60px;
+color: #663399;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'open sans';
+width: 279px;
+height: 58px;
+box-shadow: 0px 0px 20px #00000033;
+border: 2px solid #663399;
+border-radius: 24px;
+opacity: 1;
+cursor: pointer;
+}
+.OpenAcButton:hover {
+  color: #fff;
+  background-color: #663399;
+}
+/* card 1 of 3 */
+.Icon1{
+  margin-top: 30px;
+  margin-left: 34px;
+  width: 90px;
+  height: 90px;
+  background: transparent url('../assets/images/Get Paid Instantly.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+
+/* card 2 of 3 */
+.Icon2{
+  margin-top: 30px;
+  margin-left: 34px;
+  width: 90px;
+  height: 90px;
+  background: transparent url('../assets/images/Low interest rate.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+
+ /* card 3 of 3 */
+
+.Icon3{
+  margin-top: 30px;
+  margin-left: 34px;
+  width: 90px;
+  height: 90px;
+  background: transparent url('../assets/images/Secure Payments.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+ .card1:hover{
+  background-color: #a062c98e;
+ }
+ .card1:hover .cardheader{
+  color: #fff;
+ }
+ .card1:hover .cardbody{
+  color: #fff;
+ }
+ /* card 1 of 2 */
+
+ .Icon4{
+  margin-top: 30px;
+  margin-left: 34px;
+  width: 90px;
+  height: 90px;
+  background: transparent url('../assets/images/freelancer_feature_icon_6@1.5x.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.cardheader{
+  color: #000000;
+  padding-top: 19px;
+  padding-bottom: 11px;
+  margin-left: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'open sans';
+  opacity: 1;
+}
+.cardbody{
+  color: #7070708f;
+  font-size: 15px;
+  font-family: 'open sans';
+  margin-left: 40px;
+  opacity: 1;
+  font-weight: 500;
+}
+
+
+
+ .card2Upper:hover{
+  background-color: #a062c98e;
+ }
+ .card2Upper:hover .cardheader{
+  color: #fff;
+ }
+ .card2Upper:hover .cardbody{
+  color: #fff;
+ }
+
+ /* card 2 of 2 */
+
+ .Icon5{
+  margin-top: 30px;
+  margin-left: 34px;
+  width: 90px;
+  height: 90px;
+  background: transparent url('../assets/images/Covid.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.cardheader{
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'open sans';
+  opacity: 1;
+}
+.cardbody{
+  color: #7070708f;
+  font-size: 15px;
+  font-family: 'open sans';
+  margin-left: 40px;
+  opacity: 1;
+}
+
+.card2Lower:hover{
+  background-color: #a062c98e;
+ }
+ .card2Lower:hover .cardheader{
+  color: #fff;
+ }
+ .card2Lower:hover .cardbody{
+  color: #fff;
+ }
