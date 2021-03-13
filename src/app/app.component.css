@@ -88,12 +88,13 @@ border: 1px solid #663399;
   background: #481877;
 }
 #navbar {
-  /* background-color: rgba(255, 255, 255, 0.247); */
+  background-color: rgb(255, 255, 255);
   transition: background-color 1s ease 0s;
   overflow: hidden;
   /* background-color: rgba(255, 255, 255, 0.322); */
   /* padding-right: 10px; */
-  padding-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 0px;
   margin-left: -30px;
   transition: 0.4s;
   position: fixed;
